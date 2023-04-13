@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://mysql-nathand59.alwaysdata.net/nathand59_interspe_bdd
+    password: x?gjKfxb$Gc4m&53m9xk
+    username: nathand59_inters
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
