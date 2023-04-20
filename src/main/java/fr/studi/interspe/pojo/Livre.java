@@ -17,10 +17,11 @@ public class Livre {
 
     private String titre;
 
+    private String description;
+
     @ManyToOne
     @JoinColumn(name = "auteur_id")
     private Auteur auteur;
-
 
     private Boolean archive;
 
