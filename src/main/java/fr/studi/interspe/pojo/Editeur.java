@@ -13,7 +13,7 @@ import lombok.Setter;
 public class Editeur {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long editeur_id;
 
     private String nom;

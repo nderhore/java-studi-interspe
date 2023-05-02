@@ -13,11 +13,11 @@ public class Emprunt {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long emprunt_id;
 
     @ManyToOne
-    @JoinColumn(name = "exemple_id")
+    @JoinColumn(name = "exemplaire_id")
     private Exemplaire exemplaire;
 
     @ManyToOne

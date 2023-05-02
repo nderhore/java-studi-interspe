@@ -6,5 +6,9 @@ public interface ApiRegistration {
 
     final String ADHERENT = "adherent/";
 
+    final String BOOK = "book/";
+
+    final String STATUS = "status/";
+
 
 }

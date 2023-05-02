@@ -10,8 +10,7 @@ import java.util.List;
 public interface AdherentRepository extends CrudRepository<Adherent,Long> {
 
 
-    @Query("SELECT a FROM Adherent a")
+    @Query("SELECT a FROM Adherent a") // JPA -> Java Persistence API
     List<Adherent> findAllAdherent();
-
 
 }

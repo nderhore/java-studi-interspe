@@ -2,6 +2,9 @@ package fr.studi.interspe.pojo;
 
 public enum Status {
 
-    EN_COURS,
-    TERMINE
+    LOUER,
+    NON_LOUER,
+    ARCHIVED,
+    TOUS,
+    RENDU
 }

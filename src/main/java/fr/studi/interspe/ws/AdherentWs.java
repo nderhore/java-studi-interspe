@@ -3,18 +3,19 @@ package fr.studi.interspe.ws;
 import fr.studi.interspe.pojo.Adherent;
 import fr.studi.interspe.service.AdherentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RequestMapping(ApiRegistration.API_REST
         + ApiRegistration.ADHERENT)
-@RestController
+@RestController // -> je consomme et je renvoi du JSON
+// @Controller -> je renvoie du HTML
 public class AdherentWs {
 
     @Autowired
     private AdherentService adherentService;
-
 
     @GetMapping
     public List<Adherent> getAllAdherent(){

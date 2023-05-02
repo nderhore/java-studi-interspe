@@ -10,8 +10,8 @@ import lombok.Setter;
 public class Livre {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long livre_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String isbn;
 
@@ -24,8 +24,5 @@ public class Livre {
     private Auteur auteur;
 
     private Boolean archive;
-
-
-
 
 }
