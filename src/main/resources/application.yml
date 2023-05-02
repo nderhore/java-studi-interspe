@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
 
 management:
@@ -14,3 +14,7 @@ management:
     web:
       exposure:
         include: '*'
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
