@@ -29,17 +29,18 @@ public class AdherentWs {
 
     @PostMapping
     public void createAdherent(@RequestBody Adherent adherent){
-
+            adherentService.createAdherent(adherent);
     }
 
     @PutMapping("{id}")
     public void updateAdherentById(@RequestBody Adherent adherent,
                                    @PathVariable Long id){
-
+        adherentService.updateAdherentById(adherent,id);
     }
 
     @DeleteMapping("{id}")
     public void deleteAdherentById(@PathVariable Long id){
+        adherentService.deleteAdherentById(id);
 
     }
 

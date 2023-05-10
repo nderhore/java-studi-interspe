@@ -16,11 +16,11 @@ public class Emprunt {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long emprunt_id;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "exemplaire_id")
     private Exemplaire exemplaire;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "adherent_id")
     private Adherent adherent;
 
