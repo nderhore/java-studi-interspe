@@ -13,7 +13,7 @@ import lombok.Setter;
 public class Genre {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long genre_id;
 
     private String nom;

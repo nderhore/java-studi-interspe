@@ -10,7 +10,7 @@ import lombok.Setter;
 public class Auteur {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long auteur_id;
 
     private String prenom;

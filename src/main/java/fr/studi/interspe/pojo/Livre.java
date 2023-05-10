@@ -10,21 +10,19 @@ import lombok.Setter;
 public class Livre {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long livre_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String isbn;
 
     private String titre;
 
+    private String description;
+
     @ManyToOne
     @JoinColumn(name = "auteur_id")
     private Auteur auteur;
 
-
     private Boolean archive;
-
-
-
 
 }

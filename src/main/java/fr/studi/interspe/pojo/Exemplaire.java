@@ -11,7 +11,7 @@ public class Exemplaire {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long exemple_id;
 
     @ManyToOne

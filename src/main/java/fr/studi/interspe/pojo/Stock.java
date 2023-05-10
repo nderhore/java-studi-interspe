@@ -13,7 +13,7 @@ import lombok.Setter;
 public class Stock {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long stock_id;
 
     private String emplacement;

@@ -14,7 +14,7 @@ import lombok.Setter;
 public class Adherent {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long adherent_id;
 
     private String nom;
