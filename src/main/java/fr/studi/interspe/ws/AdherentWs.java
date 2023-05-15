@@ -12,6 +12,7 @@ import java.util.List;
         + ApiRegistration.ADHERENT)
 @RestController // -> je consomme et je renvoi du JSON
 // @Controller -> je renvoie du HTML
+@CrossOrigin(origins = "*",allowedHeaders = "*")
 public class AdherentWs {
 
     @Autowired

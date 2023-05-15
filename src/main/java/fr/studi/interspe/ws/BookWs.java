@@ -12,6 +12,7 @@ import java.util.List;
 @RestController // -> bookWs va recevoir et envoyer du JSON
 @RequestMapping(ApiRegistration.API_REST
         + ApiRegistration.BOOK) // -> localhost:8080/api/book
+@CrossOrigin(origins = "*",allowedHeaders = "*")
 public class BookWs {
 
     @Autowired
